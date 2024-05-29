@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "suggest": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "term": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "value",
+            "term"
+          ]
+        }
+      ]
+    },
+    "cache": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "suggest",
+    "cache"
+  ]
+}

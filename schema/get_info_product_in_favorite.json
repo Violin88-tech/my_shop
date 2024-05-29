@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "sort": {
+          "type": "string"
+        },
+        "sorts": {
+          "type": "array",
+          "items": {}
+        },
+        "cmode": {
+          "type": "object",
+          "properties": {
+            "sale": {
+              "type": "string"
+            },
+            "availability": {
+              "type": "integer"
+            },
+            "limited_mode": {
+              "type": "string"
+            },
+            "loyalty": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sale",
+            "availability",
+            "limited_mode",
+            "loyalty"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "app": {
+          "type": "string"
+        },
+        "robots": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "sort",
+        "sorts",
+        "cmode",
+        "title",
+        "app",
+        "robots"
+      ]
+    },
+    "total": {
+      "type": "object",
+      "properties": {
+        "cost_discount": {
+          "type": "integer"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "shipment_date": {
+          "type": "null"
+        },
+        "discount": {
+          "type": "integer"
+        },
+        "promo70": {
+          "type": "object"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "time": {
+          "type": "integer"
+        },
+        "cost": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "cost_discount",
+        "quantity",
+        "shipment_date",
+        "discount",
+        "promo70",
+        "weight",
+        "time",
+        "cost"
+      ]
+    },
+    "save": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "old_cost": {
+              "type": "integer"
+            },
+            "img": {
+              "type": "string"
+            },
+            "promo": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "fixed": {
+                      "type": "integer"
+                    },
+                    "href": {
+                      "type": "string"
+                    },
+                    "discount": {
+                      "type": "integer"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "hint": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "fixed",
+                    "href",
+                    "discount",
+                    "id",
+                    "hint",
+                    "type"
+                  ]
+                }
+              ]
+            },
+            "cart_id": {
+              "type": "string"
+            },
+            "product_id": {
+              "type": "string"
+            },
+            "subtitle_1_href": {
+              "type": "string"
+            },
+            "subtitle_1": {
+              "type": "string"
+            },
+            "availability": {
+              "type": "object",
+              "properties": {
+                "count": {
+                  "type": "null"
+                },
+                "status": {
+                  "type": "boolean"
+                },
+                "href": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "count",
+                "status",
+                "href"
+              ]
+            },
+            "title": {
+              "type": "string"
+            },
+            "rating": {
+              "type": "object",
+              "properties": {
+                "rating_count": {
+                  "type": "integer"
+                },
+                "review_count": {
+                  "type": "integer"
+                },
+                "qustns_count": {
+                  "type": "integer"
+                },
+                "rating": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "rating_count",
+                "review_count",
+                "qustns_count",
+                "rating"
+              ]
+            },
+            "ga_item": {
+              "type": "object",
+              "properties": {
+                "brand": {
+                  "type": "null"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "brand",
+                "quantity",
+                "category",
+                "id",
+                "price",
+                "name"
+              ]
+            },
+            "cost": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "old_cost",
+            "img",
+            "promo",
+            "cart_id",
+            "product_id",
+            "subtitle_1_href",
+            "subtitle_1",
+            "availability",
+            "title",
+            "rating",
+            "ga_item",
+            "cost"
+          ]
+        }
+      ]
+    },
+    "cart": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "meta",
+    "total",
+    "save",
+    "cart"
+  ]
+}

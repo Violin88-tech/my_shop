@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "total": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "type": "integer"
+        },
+        "time": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "quantity",
+        "time"
+      ]
+    },
+    "save": {
+      "type": "object"
+    },
+    "cart": {
+      "type": "object",
+      "properties": {
+        "4875742": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "4875742"
+      ]
+    }
+  },
+  "required": [
+    "total",
+    "save",
+    "cart"
+  ]
+}

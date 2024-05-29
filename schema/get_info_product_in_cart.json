@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "total": {
+      "type": "object",
+      "properties": {
+        "cost_discount": {
+          "type": "integer"
+        },
+        "shipment_date": {
+          "type": ["null", "object"]
+        },
+        "time": {
+          "type": "integer"
+        },
+        "promo70": {
+          "type": "object"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        },
+        "cost": {
+          "type": "integer"
+        },
+        "discount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "cost_discount",
+        "shipment_date",
+        "time",
+        "promo70",
+        "weight",
+        "quantity",
+        "cost",
+        "discount"
+      ]
+    },
+    "cart": {
+      "type": "array",
+      "items": {}
+    },
+    "save": {
+      "type": "array",
+      "items": {}
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "app": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "sorts": {
+          "type": "array",
+          "items": {}
+        },
+        "cmode": {
+          "type": "object",
+          "properties": {
+            "sale": {
+              "type": "string"
+            },
+            "loyalty": {
+              "type": "string"
+            },
+            "availability": {
+              "type": "integer"
+            },
+            "limited_mode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sale",
+            "loyalty",
+            "availability",
+            "limited_mode"
+          ]
+        },
+        "robots": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "app",
+        "title",
+        "sorts",
+        "cmode",
+        "robots",
+        "sort"
+      ]
+    }
+  },
+  "required": [
+    "total",
+    "cart",
+    "save",
+    "meta"
+  ]
+}
