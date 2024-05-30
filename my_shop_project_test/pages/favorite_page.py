@@ -1,3 +1,5 @@
+import time
+
 import allure
 from selene import browser, have
 
@@ -8,6 +10,7 @@ class FavoritePage:
             browser.element('.header__search input').type(
                 "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ).press_enter()
+            time.sleep(2)
             return self
 
     with allure.step("Open product page"):
