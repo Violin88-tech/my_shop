@@ -5,7 +5,7 @@ from my_shop_project_test.pages.main_page import main
 
 
 @allure.epic('WEB.Add product to cart')
-@allure.label("owner", "MaryMokretsova")
+@allure.label("owner", "Violin88-tech")
 @allure.feature("Checking whether a product has been added to cart")
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')
