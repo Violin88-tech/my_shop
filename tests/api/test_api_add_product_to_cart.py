@@ -6,7 +6,7 @@ from my_shop_project_test.helper.api_requests import api_request
 
 
 @allure.epic('API. Add product to cart')
-@allure.label("owner", "MaryMokretsova")
+@allure.label("owner", "Violin88-tech")
 @allure.feature("Checking whether a product has been added to cart")
 @allure.tag('regress', 'api', 'normal')
 @allure.severity('normal')

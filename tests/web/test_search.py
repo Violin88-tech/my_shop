@@ -5,7 +5,7 @@ from my_shop_project_test.pages.search_page import search
 
 
 @allure.epic('WEB.Search Page')
-@allure.label("owner", "MaryMokretsova")
+@allure.label("owner", "Violin88-tech")
 @allure.feature("Checking an successful and an unsuccessful search")
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')

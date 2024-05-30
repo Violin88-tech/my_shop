@@ -6,7 +6,7 @@ from my_shop_project_test.helper.api_requests import api_request
 
 
 @allure.epic('API. Search')
-@allure.label("owner", "MaryMokretsova")
+@allure.label("owner", "Violin88-tech")
 @allure.feature("Checking the product search on the main page")
 @allure.label('microservice', 'API')
 @allure.tag('regress', 'api', 'normal')

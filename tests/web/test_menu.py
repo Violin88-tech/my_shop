@@ -4,7 +4,7 @@ from my_shop_project_test.pages.main_page import main
 
 
 @allure.epic('WEB.Menu')
-@allure.label("owner", "MaryMokretsova")
+@allure.label("owner", "Violin88-tech")
 @allure.feature("Checking menu items")
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')

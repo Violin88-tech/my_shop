@@ -6,7 +6,7 @@ import config
 
 
 @allure.epic('WEB.Authorized')
-@allure.label("owner", "MaryMokretsova")
+@allure.label("owner", "Violin88-tech")
 @allure.feature("Checking the authorization of the user")
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')
