@@ -1,3 +1,5 @@
+import time
+
 import allure
 from selene import browser, have, be, by
 import config
@@ -17,6 +19,7 @@ class LoginPage:
     with allure.step("Open the authorization form with email"):
         def log_in_with_password(self):
             browser.element('.popup-modal__window').element(by.text('Войти по паролю')).click()
+            time.sleep(2)
             return self
 
     with allure.step("Filling the authorization form email"):
