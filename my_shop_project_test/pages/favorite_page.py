@@ -10,7 +10,7 @@ class FavoritePage:
             browser.element('.header__search input').type(
                 "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ).press_enter()
-            time.sleep(1)
+            #time.sleep(1)
             return self
 
     with allure.step("Open product page"):
