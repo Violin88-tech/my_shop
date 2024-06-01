@@ -1,3 +1,5 @@
+import time
+
 import pytest
 import allure
 from my_shop_project_test.pages.cart_page import cart
@@ -17,6 +19,7 @@ class TestCart:
         main.open_shop_page()
 
         cart.find_item()
+        time.sleep(1)
         cart.open_page_item()
         cart.click_add_to_cart()
         cart.open_cart()

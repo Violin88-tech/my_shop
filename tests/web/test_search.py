@@ -1,3 +1,5 @@
+import time
+
 import pytest
 import allure
 from my_shop_project_test.pages.main_page import main
@@ -21,5 +23,7 @@ class TestSearch:
     @allure.title("Ckeck with negative search")
     def test_header_search_negative(self):
         main.open_shop_page()
+        time.sleep(1)
         search.header_search_negative()
+        time.sleep()
         search.search_result_failure()

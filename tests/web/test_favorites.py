@@ -1,3 +1,5 @@
+import time
+
 import pytest
 import allure
 from my_shop_project_test.pages.favorite_page import favorite
@@ -15,8 +17,9 @@ class TestFavorites:
     @allure.title("Adding and removing a book to favorites")
     def test_item_add_and_delete_favorites(self):
         main.open_shop_page()
-
+        time.sleep(1)
         favorite.find_item()
+        time.sleep()
         favorite.open_page_item()
         favorite.click_add_to_favorites()
         favorite.open_favorites()
