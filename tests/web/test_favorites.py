@@ -19,7 +19,7 @@ class TestFavorites:
         main.open_shop_page()
         time.sleep(1)
         favorite.find_item()
-        time.sleep()
+
         # favorite.open_page_item()
         #
         # favorite.click_add_to_favorites()

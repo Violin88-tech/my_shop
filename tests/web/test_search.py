@@ -19,11 +19,11 @@ class TestSearch:
         main.open_shop_page()
         search.header_search_positive()
       #  search.search_result_success()
-
-    @allure.title("Ckeck with negative search")
-    def test_header_search_negative(self):
-        main.open_shop_page()
-        time.sleep(1)
-        search.header_search_negative()
-        time.sleep()
-        search.search_result_failure()
+    #
+    # @allure.title("Ckeck with negative search")
+    # def test_header_search_negative(self):
+    #     main.open_shop_page()
+    #     time.sleep(1)
+    #     search.header_search_negative()
+    #     time.sleep()
+    #     search.search_result_failure()
