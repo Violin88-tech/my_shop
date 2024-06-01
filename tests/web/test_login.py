@@ -1,3 +1,5 @@
+import time
+
 import pytest
 import allure
 from my_shop_project_test.pages.login_page import login
@@ -16,8 +18,9 @@ class TestAuthorization:
     @allure.title("Verifying successful user authorization")
     def test_authorization_registered_user(self):
         main.open_shop_page()
-
+        time.sleep(1)
         login.open_form()
+        time.sleep(1)
         login.assert_name_form()
         login.log_in_with_password()
         login.fill_user_email()
