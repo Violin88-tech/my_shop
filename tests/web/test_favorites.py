@@ -21,7 +21,9 @@ class TestFavorites:
         favorite.find_item()
         time.sleep()
         favorite.open_page_item()
+        time.sleep(1)
         favorite.click_add_to_favorites()
+        time.sleep(1)
         favorite.open_favorites()
         favorite.click_delete_to_favorites()
 

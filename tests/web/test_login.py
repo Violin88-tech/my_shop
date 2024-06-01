@@ -22,6 +22,7 @@ class TestAuthorization:
         login.open_form()
         time.sleep(1)
         login.assert_name_form()
+        time.sleep(1)
         login.log_in_with_password()
         login.fill_user_email()
         login.fill_password_positive()
