@@ -1,3 +1,5 @@
+import time
+
 from selene import browser, have, by
 import allure
 
@@ -13,6 +15,7 @@ class CartPage:
     with allure.step("Open product page"):
         def open_page_item(self):
             browser.element('.item .img').click()
+            time.sleep(2)
             return self
 
     with allure.step("Click add to cart"):
