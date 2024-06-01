@@ -8,13 +8,13 @@ class CartPage:
         def find_item(self):
 
             browser.element(".header__search input").type(
-                "Лермонтов Маскарад"
+                "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ).press_enter()
             return self
 
     with allure.step("Open product page"):
         def open_page_item(self):
-            browser.element('.item .img').click()
+            browser.element('.item .item__title').click()
             time.sleep(2)
             return self
 
