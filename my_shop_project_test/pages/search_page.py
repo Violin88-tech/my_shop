@@ -7,9 +7,9 @@ class SearchPage:
         def header_search_positive(self):
             browser.element('.header__search input').type('Тетради').press_enter()
 
-    # with allure.step("Check the result of an successful search"):
-    #     def search_result_success(self):
-    #         browser.element('.h1 .title').should(have.text('Бумажные канцтовары'))
+    with allure.step("Check the result of an successful search"):
+        def search_result_success(self):
+            browser.element('.h1 .title').should(have.text('Тетради'))
 
     with allure.step("Input text for search negative"):
         def header_search_negative(self):
