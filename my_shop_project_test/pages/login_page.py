@@ -8,7 +8,7 @@ import config
 class LoginPage:
     with allure.step("Open the authorization form"):
         def open_form(self):
-            browser.element('.tabs-button[href="#"]').click()
+            browser.element('.tabs-button[href="#"]').press()
             return self
 
     with allure.step("Assert name the authorization form"):
