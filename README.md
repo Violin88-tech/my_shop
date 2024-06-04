@@ -123,16 +123,6 @@ allure serve allure-results
 <img src="/media/screenshots/img5.png" alt="Allure Report" width="750">)
 </p>
 
-#### Пример отчета о прохождении ui-теста
-<p align="center">
-<img src="/media/screenshots/img6.png" alt="Allure Report" width="750">)
-</p>
-
-#### Пример отчета о прохождении api-теста
-<p align="center">
-<img src="/media/screenshots/img7.png" alt="Allure Report" width="750">)
-</p>
-
 ----
 
 ### Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
