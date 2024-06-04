@@ -19,12 +19,10 @@ class TestFavorites:
         main.open_shop_page()
         time.sleep(1)
         favorite.find_item()
-
-        # favorite.open_page_item()
-        #
-        # favorite.click_add_to_favorites()
+        favorite.open_page_item()
+        favorite.click_add_to_favorites()
         # time.sleep(1)
-        # favorite.open_favorites()
-        # favorite.click_delete_to_favorites()
+        favorite.open_favorites()
+        favorite.click_delete_to_favorites()
         #
         # favorite.assert_page_favorites()

@@ -24,16 +24,16 @@ class FavoritePage:
             browser.element('.form-control .is-heart').click()
             browser.element('.favorite .badge').should(have.exact_text('1'))
             return self
+
+    with allure.step("Open favorites"):
+        def open_favorites(self):
+            browser.element('.header__icons .favorite').click()
+            return self
     #
-    # with allure.step("Open favorites"):
-    #     def open_favorites(self):
-    #         browser.element('.header__icons .favorite').click()
-    #         return self
-    #
-    # with allure.step("Click delete to favorites"):
-    #     def click_delete_to_favorites(self):
-    #         browser.element('.item .is-heart').click()
-    #         return self
+    with allure.step("Click delete to favorites"):
+        def click_delete_to_favorites(self):
+            browser.element('.item .is-heart').click()
+            return self
     #
     # with allure.step("Assert text favorites"):
     #     def assert_page_favorites(self):
