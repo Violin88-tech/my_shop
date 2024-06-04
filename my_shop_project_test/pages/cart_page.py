@@ -16,7 +16,7 @@ class CartPage:
     with allure.step("Open product page"):
         def open_page_item(self):
             browser.element('.item .item__title').click()
-            time.sleep(2)
+           # time.sleep(2)
             return self
     #
     with allure.step("Click add to cart"):
