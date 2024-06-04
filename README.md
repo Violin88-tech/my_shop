@@ -124,11 +124,6 @@ allure serve allure-results
 </p>
 
 ----
-
-### Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
-> <a target="_blank" href="https://allure.autotests.cloud/project/4113/dashboards">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
-
-
 #### Тест-планы проекта
 <p align="center">
 <img src="/media/screenshots/img8.png" alt="Allure Report" width="750">)
