@@ -34,10 +34,8 @@ alt="МАЙШОП" width="128" height="64"> </a>
   <code><img width="5%" title="Selene" src="media/logo/selene.png"></code>
   <code><img width="5%" title="GitHub" src="media/logo/github.png"></code>
   <code><img width="5%" title="Jenkins" src="media/logo/jenkins.png"></code>
-  <code><img width="5%" title="Selenoid" src="media/logo/selenoid.png"></code>
   <code><img width="5%" title="Allure Report" src="media/logo/allure_report.png"></code>
   <code><img width="5%" title="Allure TestOps" src="media/logo/allure_testops.png"></code>
-  <code><img width="5%" title="Jira" src="media/logo/jira.png"></code>
   <code><img width="5%" title="Telegram" src="media/logo/tg.png"></code>
 </p>
 
@@ -51,16 +49,14 @@ alt="МАЙШОП" width="128" height="64"> </a>
 ----
 # <a name="Jenkins">Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/10_da-vasilev_qa-guru-hw25/)</a>
 
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/C09-MaryMokretsova-unit24/">Ссылка на проект в
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/my_shop/">Ссылка на проект в
 > Jenkins</a>
 
 ### Для запуска автотестов в Jenkins
 1. Открыть проект
-<img src="/media/screenshots/img1.png">
 2. Выбрать пункт "Собрать с параметрами"
 <img src="/media/screenshots/img2.png">
-3. В случае необходимости изменить параметры и нажать на кнопку "build"
-<img src="/media/screenshots/img3.png">
+
 
 
 ### Локальный запуск автотестов
