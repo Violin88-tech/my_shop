@@ -171,9 +171,6 @@ allure serve allure-results
 
 ----
 
-### Интеграция с Jira
-> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1165">Ссылка на проект в Jira</a>
-
 <p align="center">
 <img src="/media/screenshots/img14.png" alt="Allure Report" width="750">)
 </p>
@@ -189,11 +186,6 @@ allure serve allure-results
 
 ----
 
-### Пример запуска теста в Selenoid
 
-<p align="center">
 
-<img src="/media/screenshots/test.gif" alt="Test example">
-</p>
 
-----
