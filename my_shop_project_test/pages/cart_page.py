@@ -13,18 +13,18 @@ class CartPage:
            # time.sleep(1)
             return self
     #
-    with allure.step("Open product page"):
-        def open_page_item(self):
-            browser.element('.item .item__title').click()
-           # time.sleep(2)
-            return self
+    # with allure.step("Open product page"):
+    #     def open_page_item(self):
+    #         browser.element('.item .item__title').click()
+    #        # time.sleep(2)
+    #         return self
     #
-    with allure.step("Click add to cart"):
-        def click_add_to_cart(self):
-            browser.element('.form-control>.field.flex-grow>button').click()
-            browser.element('[href="/my/cart"] .badge').should(have.exact_text('1'))
-            return self
-    #
+    # with allure.step("Click add to cart"):
+    #     def click_add_to_cart(self):
+    #         browser.element('.form-control>.field.flex-grow>button').click()
+    #         browser.element('[href="/my/cart"] .badge').should(have.exact_text('1'))
+    #         return self
+    # #
     # with allure.step("Open cart"):
     #     def open_cart(self):
     #         browser.element('[href="/my/cart"]').click()
