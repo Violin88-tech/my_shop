@@ -160,13 +160,6 @@ allure serve allure-results
 </p>
 
 ----
-
-<p align="center">
-<img src="/media/screenshots/img14.png" alt="Allure Report" width="750">)
-</p>
-
-----
-
 ### Уведомления в Telegram
 
 <p align="center">
