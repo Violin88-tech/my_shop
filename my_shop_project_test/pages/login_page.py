@@ -9,11 +9,13 @@ class LoginPage:
     with allure.step("Open the authorization form"):
         def open_form(self):
             browser.element('.tabs-button[href="#"]').click()
+            time.sleep(2)
             return self
 
     with allure.step("Assert name the authorization form"):
         def assert_name_form(self):
             browser.element('.popup-modal__window__header').should(have.text('Вход и регистрация'))
+            time.sleep(2)
             return self
 
     with allure.step("Open the authorization form with email"):
@@ -25,11 +27,13 @@ class LoginPage:
     with allure.step("Filling the authorization form email"):
         def fill_user_email(self):
             browser.element('#email').should(be.blank).type(config.settings.USER_EMAIL)
+            time.sleep(2)
             return self
 
     with allure.step("Filling the authorization form positive"):
         def fill_password_positive(self):
             browser.element('#pass').type(config.settings.PASSWORD)
+            time.sleep(2)
             return self
 
     # with allure.step("Filling the authorization form password"):
@@ -40,6 +44,7 @@ class LoginPage:
     with allure.step("Submit the form"):
         def submit_the_form(self):
             browser.element('.popup-modal__window').element(by.text('Войти')).click()
+            time.sleep(2)
             return self
 
     def repeat_submit_the_form(self):
