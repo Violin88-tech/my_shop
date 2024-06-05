@@ -16,23 +16,26 @@ class CartPage:
     with allure.step("Open product page"):
         def open_page_item(self):
             browser.element('.item .item__title').click()
-            time.sleep(3)
+            time.sleep(6)
             return self
 
     with allure.step("Click add to cart"):
         def click_add_to_cart(self):
             browser.element('.form-control>.field.flex-grow>button').click()
             browser.element('[href="/my/cart"] .badge').should(have.exact_text('1'))
+            time.sleep(6)
             return self
 
     with allure.step("Open cart"):
         def open_cart(self):
             browser.element('[href="/my/cart"]').click()
+            time.sleep(6)
             return self
 
     with allure.step("Clear cart"):
         def clear_cart(self):
             browser.element('.cart-item .icon__delete').click()
+            time.sleep(6)
             return self
 
     with allure.step("Confirm clear cart"):
@@ -40,6 +43,7 @@ class CartPage:
             browser.element(
                 ' .popup-modal .cart-confirm__btns'
             ).element(by.text('Удалить')).click()
+            time.sleep(6)
             return self
 
     with allure.step("Assert text cart"):
@@ -47,6 +51,7 @@ class CartPage:
             browser.element('.wrap h3').should(
                 have.text('Ваша корзина пуста')
             )
+            time.sleep(6)
             return self
 
 cart = CartPage()
