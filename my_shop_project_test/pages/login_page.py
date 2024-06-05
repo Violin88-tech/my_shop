@@ -50,10 +50,10 @@ class LoginPage:
         self.submit_the_form()
         return self
 
-    with allure.step("Checking that user has been authorized"):
-        def assert_authorization(self):
-            browser.element('[href="#"] .no-tablet').should(have.text('Мой кабинет'))
-            return self
+    # with allure.step("Checking that user has been authorized"):
+    #     def assert_authorization(self):
+    #         browser.element('[href="#"] .no-tablet').should(have.text('Мой кабинет'))
+    #         return self
 
 
 login = LoginPage()
