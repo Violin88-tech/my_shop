@@ -32,10 +32,10 @@ class LoginPage:
             browser.element('#pass').type(config.settings.PASSWORD)
             return self
 
-    with allure.step("Filling the authorization form password"):
-        def fill_password_negative(self):
-            browser.element('#pass').type('123')
-            return self
+    # with allure.step("Filling the authorization form password"):
+    #     def fill_password_negative(self):
+    #         browser.element('#pass').type('123')
+    #         return self
 
     with allure.step("Submit the form"):
         def submit_the_form(self):
