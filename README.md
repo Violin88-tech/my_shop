@@ -150,7 +150,7 @@ allure serve allure-results
 
 <p align="center">
 
-<img src="/media/screenshots/img15.png" alt="Telegram" width="300"></a>
+<img src="/media/screenshots/allure.png" alt="Telegram" width="300"></a>
 </p>
 
 ----
