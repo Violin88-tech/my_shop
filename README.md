@@ -140,11 +140,6 @@ allure serve allure-results
 <img src="/media/screenshots/img11.png" alt="Allure Report" width="750">)
 </p>
 
-#### Пример dashboard с общими результатами тестирования
-<p align="center">
-<img src="/media/screenshots/img12.png" alt="Allure Report" width="750">)
-</p>
-
 #### История запуска тестовых наборов
 <p align="center">
 <img src="/media/screenshots/img13.png" alt="Allure Report" width="750">)
