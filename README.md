@@ -124,10 +124,6 @@ allure serve allure-results
 </p>
 
 ----
-#### Тест-планы проекта
-<p align="center">
-<img src="/media/screenshots/img8.png" alt="Allure Report" width="750">)
-</p>
 
 #### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
 <p align="center">
