@@ -22,9 +22,9 @@ class TestCart:
         cart.open_page_item()
         time.sleep(1)
         cart.click_add_to_cart()
-        # cart.open_cart()
-        #
-        # cart.clear_cart()
-        # cart.confirm_clear_cart()
-        #
-        # cart.assert_page_cart()
+        cart.open_cart()
+
+        cart.clear_cart()
+        cart.confirm_clear_cart()
+
+        cart.assert_page_cart()
