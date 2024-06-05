@@ -10,7 +10,7 @@ class CartPage:
             browser.element(".header__search input").type(
                 "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ).press_enter()
-            time.sleep(3)
+            time.sleep(5)
             return self
     #
     with allure.step("Open product page"):
