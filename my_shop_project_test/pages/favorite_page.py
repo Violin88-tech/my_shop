@@ -38,12 +38,6 @@ class FavoritePage:
             time.sleep(3)
             return self
 
-    # with allure.step("Assert text favorites"):
-    #     def assert_page_favorites(self):
-    #         browser.element('.wrap h3').should(
-    #             have.text("Избранных товаров нет")
-    #         )
-    #         return self
 
 
 favorite = FavoritePage()

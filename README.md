@@ -55,7 +55,7 @@ alt="МАЙШОП" width="128" height="64"> </a>
 ### Для запуска автотестов в Jenkins
 1. Открыть проект
 2. Выбрать пункт "Собрать с параметрами"
-<img src="/media/screenshots/img2.png">
+<img src="/media/screenshots/jenkins_1.png">
 
 
 
@@ -115,34 +115,34 @@ allure serve allure-results
 
 #### Общие результаты
 <p align="center">
-<img src="/media/screenshots/img4.png" alt="Allure Report" width="750">)
+<img src="/media/screenshots/allure_results.png" alt="Allure Report" width="750">)
 </p>
 
 #### Список тест кейсов
 <p align="center">
-<img src="/media/screenshots/img5.png" alt="Allure Report" width="750">)
+<img src="/media/screenshots/allure_behaviors.png" alt="Allure Report" width="750">)
 </p>
 
 ----
 
 #### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
 <p align="center">
-<img src="/media/screenshots/img9.png" alt="Allure Report" width="750">)
+<img src="/media/screenshots/testops.png.png" alt="Allure Report" width="750">)
 </p>
 
 #### Пример отчёта выполнения одного из автотестов
 <p align="center">
-<img src="/media/screenshots/img10.png" alt="Allure Report" width="750">)
+<img src="/media/screenshots/testops_1.png" alt="Allure Report" width="750">)
 </p>
 
 #### Тестовые артефакты
 <p align="center">
-<img src="/media/screenshots/img11.png" alt="Allure Report" width="750">)
+<img src="/media/screenshots/testops_2.png" alt="Allure Report" width="750">)
 </p>
 
 #### История запуска тестовых наборов
 <p align="center">
-<img src="/media/screenshots/img13.png" alt="Allure Report" width="750">)
+<img src="/media/screenshots/testops_3.png" alt="Allure Report" width="750">)
 </p>
 
 ----
