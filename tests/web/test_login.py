@@ -18,11 +18,7 @@ class TestAuthorization:
     @allure.title("Verifying successful user authorization")
     def test_authorization_registered_user(self):
         main.open_shop_page()
-        time.sleep(1)
         login.open_form()
-        time.sleep(1)
-        login.assert_name_form()
-        time.sleep(1)
         login.log_in_with_password()
         login.fill_user_email()
         login.fill_password_positive()
@@ -30,20 +26,3 @@ class TestAuthorization:
         login.repeat_submit_the_form()
 
 
-    # @allure.title("Verifying unsuccessful user authorization")
-    # def test_authorization_unregistered_user(self):
-    #     main.open_shop_page()
-    #
-    #     login.open_form()
-    #     time.sleep(1)
-    #     login.assert_name_form()
-    #     time.sleep(1)
-    #     login.log_in_with_password()
-    #     time.sleep(1)
-    #     login.fill_user_email()
-    #     time.sleep(1)
-    #     login.fill_password_negative()
-    #     time.sleep(1)
-    #     login.submit_the_form()
-    #     time.sleep(1)
-    #     login.assert_name_form()

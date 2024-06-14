@@ -14,7 +14,6 @@ class TestMenu:
     @allure.title("Check header, body and footer menu")
     def test_main_menu(self):
         main.open_shop_page()
-
         main.assert_header_main_menu()
         main.assert_body_main_menu()
         main.assert_footer_main_menu()

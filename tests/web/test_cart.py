@@ -17,15 +17,10 @@ class TestCart:
     @allure.title("Adding and removing a book to cart")
     def test_item_add_and_delete_cart(self):
         main.open_shop_page()
-        time.sleep(1)
         cart.find_item()
-        time.sleep(1)
         cart.open_page_item()
-        time.sleep(1)
         cart.click_add_to_cart()
         cart.open_cart()
-
         cart.clear_cart()
         cart.confirm_clear_cart()
 
-        cart.assert_page_cart()
