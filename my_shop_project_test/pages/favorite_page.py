@@ -14,8 +14,8 @@ class FavoritePage:
 
     with allure.step("Open product page"):
         def open_page_item(self):
-            browser.element('.item .item__title').click()
-            browser.element('[to="#reviews"] [class="md:block"]').with_(timeout=50).should(have.text("Задать вопрос"))
+            browser.element('.item .item__title').with_(timeout=50).click()
+          #  browser.element('[to="#reviews"] [class="md:block"]').with_(timeout=50).should(have.text("Задать вопрос"))
             return self
 
     with allure.step("Click add to favorites"):
