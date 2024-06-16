@@ -23,7 +23,6 @@ class CartPage:
 
         @allure.step("Click add to cart")
         def click_add_to_cart(self):
-
            with allure.step("Click add to cart"):
             browser.element('.form-control>.field.flex-grow>button').click()
             browser.element('[href="/my/cart"] .badge').with_(timeout=100).should(have.exact_text('1'))
