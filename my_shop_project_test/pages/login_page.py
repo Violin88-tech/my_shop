@@ -37,10 +37,11 @@ class LoginPage:
         browser.element('#pass').type('123')
         return self
 
-    with allure.step("Submit the form"):
-        def submit_the_form(self):
-            browser.element('.popup-modal__window').with_(timeout=200).element(by.text('Войти')).click()
-            return self
+    @allure.step("Submit the form")
+    #with allure.step("Submit the form"):
+    def submit_the_form(self):
+        browser.element('.popup-modal__window').with_(timeout=200).element(by.text('Войти')).click()
+        return self
 
     def repeat_submit_the_form(self):
         self.open_form()
