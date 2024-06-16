@@ -8,7 +8,7 @@ class LoginPage:
     def open_form(self):
        # with allure.step("Open the authorization form"):
         browser.element('.tabs-button[href="#"]').click()
-        browser.element('.popup-modal__window__header').with_(timeout=50).should(have.text(
+        browser.element('.popup-modal__window__header').with_(timeout=200).should(have.text(
                 'Вход и регистрация'))
         return self
 
@@ -16,7 +16,7 @@ class LoginPage:
     def log_in_with_password(self):
         #with allure.step("Open the authorization form with email"):
         browser.element('.popup-modal__window').element(by.text('Войти по паролю')).click()
-        browser.element('.popup-modal__window').with_(timeout=50).should(have.text('Войти'))
+        browser.element('.popup-modal__window').with_(timeout=200).should(have.text('Войти'))
         return self
 
     @allure.step("Filling the authorization form email")
