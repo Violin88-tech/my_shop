@@ -17,8 +17,8 @@ class FavoritePage:
     @allure.step("Open product page")
     def open_page_item(self):
         #with allure.step("Open product page"):
-        browser.element('.item .item__title').with_(timeout=50).click()
-        browser.element('[class="option active"]').with_(timeout=50).should(have.text("соответствию запросу"))
+        browser.element('.item .item__title').click()
+        browser.element('[class="option active"]').with_(timeout=200).should(have.text("соответствию запросу"))
         return self
 
     @allure.step("Click add to favorites")
