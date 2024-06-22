@@ -10,6 +10,7 @@ class LoginPage:
         browser.element('.tabs-button[href="#"]').click()
         browser.element('.popup-modal__window__header').with_(timeout=200).should(have.text(
                 'Вход и регистрация'))
+        time.sleep(2)
         return self
 
     @allure.step("Open the authorization form with email")
