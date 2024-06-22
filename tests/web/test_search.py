@@ -17,11 +17,12 @@ class TestSearch:
     @allure.title("Ckeck with positive search")
     def test_header_search_positive(self):
         main.open_shop_page()
+        time.sleep(2)
         search.header_search_positive()
 
     @allure.title("Ckeck with negative search")
     def test_header_search_negative(self):
         main.open_shop_page()
-        time.sleep(1)
+        time.sleep(2)
         search.header_search_negative()
 
