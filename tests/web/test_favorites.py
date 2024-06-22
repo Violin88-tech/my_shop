@@ -16,9 +16,9 @@ class TestFavorites:
     @allure.title("Adding and removing a book to favorites")
     def test_item_add_and_delete_favorites(self):
         main.open_shop_page()
-        time.sleep(2)
+      #  time.sleep(2)
         favorite.find_item()
-        time.sleep(2)
+      #  time.sleep(2)
         favorite.open_page_item()
         favorite.click_add_to_favorites()
         favorite.open_favorites()

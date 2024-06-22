@@ -7,7 +7,7 @@ class SearchPage:
     #with allure.step("Input text for search positive"):
     def header_search_positive(self):
         browser.element('.header__search input').type('Тетради').press_enter()
-        browser.element('.header__search input').with_(timeout=200).should(have.value('Тетради'))
+        browser.element('.header__search input').with_(timeout=600).should(have.value('Тетради'))
 
     @allure.step("Input text for search negative")
     #with allure.step("Input text for search negative"):

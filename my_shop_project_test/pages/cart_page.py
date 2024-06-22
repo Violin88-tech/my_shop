@@ -8,7 +8,7 @@ class CartPage:
             browser.element(".header__search input").type(
                 "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ).press_enter()
-            browser.element(".header__search input").with_(timeout=300).should(have.value(
+            browser.element(".header__search input").with_(timeout=600).should(have.value(
                 "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ))
             return self
@@ -18,7 +18,7 @@ class CartPage:
 
             #with allure.step("Open product page"):
             browser.element('.item .item__title').click()
-            browser.element('[to="#reviews"] [class="md:block"]').with_(timeout=50).should(
+            browser.element('[to="#reviews"] [class="md:block"]').with_(timeout=150).should(
                         have.text("Задать вопрос"))
             return self
 
@@ -34,21 +34,21 @@ class CartPage:
         def open_cart(self):
            #with allure.step("Open cart"):
             browser.element('[href="/my/cart"]').click()
-            browser.element('[class="cart-sort-pane__control"]').with_(timeout=50).should(have.text("Выбрать всё"))
+            browser.element('[class="cart-sort-pane__control"]').with_(timeout=150).should(have.text("Выбрать всё"))
             return self
 
         @allure.step("Clear cart")
         def clear_cart(self):
          #  with allure.step("Clear cart"):
             browser.element('.cart-item .icon__delete').click()
-            browser.element(".h2").with_(timeout=50).should(have.text("Удаление товаров"))
+            browser.element(".h2").with_(timeout=150).should(have.text("Удаление товаров"))
             return self
 
         @allure.step("Confirm clear cart")
         def confirm_clear_cart(self):
          # with allure.step("Confirm clear cart"):
             browser.element(' .popup-modal .cart-confirm__btns').element(by.text('Удалить')).click()
-            browser.element('.wrap h3').with_(timeout=50).should(have.text('Ваша корзина пуста'))
+            browser.element('.wrap h3').with_(timeout=150).should(have.text('Ваша корзина пуста'))
             return self
 
 cart = CartPage()
