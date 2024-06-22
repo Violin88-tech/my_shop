@@ -9,8 +9,8 @@ class LoginPage:
 
         browser.element('.tabs-button[href="#"]').click()
         time.sleep(2)
-        # browser.element('.popup-modal__window__header').with_(timeout=200).should(have.text(
-        #         'Вход и регистрация'))
+        browser.element('.popup-modal__window__header').with_(timeout=200).should(have.text(
+                'Вход и регистрация'))
 
         return self
 

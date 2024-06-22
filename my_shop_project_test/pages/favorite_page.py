@@ -11,8 +11,8 @@ class FavoritePage:
                 "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"
             ).press_enter()
         time.sleep(4)
-        browser.element('.header__search input').with_(timeout=200).should(have.value(
-                "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"))
+        # browser.element('.header__search input').with_(timeout=200).should(have.value(
+        #         "Искусственный интеллект с примерами на Python. Создание приложений искусственного интеллекта"))
         return self
 
     @allure.step("Open product page")

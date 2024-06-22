@@ -17,6 +17,7 @@ class TestFavorites:
     def test_item_add_and_delete_favorites(self):
         main.open_shop_page()
         favorite.find_item()
+        time.sleep(2)
         favorite.open_page_item()
         favorite.click_add_to_favorites()
         favorite.open_favorites()
