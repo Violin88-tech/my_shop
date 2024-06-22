@@ -6,7 +6,7 @@ class LoginPage:
 
     @allure.step("Open the authorization form")
     def open_form(self):
-       # with allure.step("Open the authorization form"):
+
         browser.element('.tabs-button[href="#"]').click()
         time.sleep(2)
         # browser.element('.popup-modal__window__header').with_(timeout=200).should(have.text(
